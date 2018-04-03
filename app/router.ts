@@ -6,7 +6,19 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL,
 });
 
-Router.map(() => {
+Router.map(function() {
+    this.route('page-not-found', { path: '/*bad_url' });
+
+    // if (window.isProviderDomain) {
+    //     this.route('submit');
+    // } else {
+    this.route('collections', function() {
+        this.route('page-not-found', { path: '/' });
+        this.route('provider', { path: ':provider_id' }, function() {
+            this.route('submit');
+        });
+    });
+    // }
 });
 
 export default Router;
