@@ -4,7 +4,7 @@ module.exports = function(environment) {
     const ENV = {
         modulePrefix: 'ember-osf-collections',
         environment,
-        rootURL: '/',
+        rootURL: '/collections/',
         locationType: 'auto',
         EmberENV: {
             FEATURES: {
