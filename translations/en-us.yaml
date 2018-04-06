@@ -1,8 +1,0 @@
-components:
-  errorPage:
-    title:
-      notFound: 'Page not found'
-    details:
-      notFound: 'The page you were looking for is not found on the OSF Collections service.'
-    report: 'If this should not have occurred and the issue persists, please report it to'
-    goTo: 'Go to OSF Collections'
