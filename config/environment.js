@@ -1,11 +1,14 @@
 'use strict';
 
 module.exports = function(environment) {
+    const authorizationType = 'cookie';
+
     const ENV = {
         modulePrefix: 'ember-osf-collections',
         environment,
         rootURL: '/collections/',
         locationType: 'auto',
+        authorizationType,
         EmberENV: {
             FEATURES: {
                 // Here you can enable experimental features on an ember canary build

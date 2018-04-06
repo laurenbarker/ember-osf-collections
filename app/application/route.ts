@@ -1,7 +1,9 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
-export default class Application extends Route.extend({
+import OSFAgnosticAuthRouteMixin from 'ember-osf/mixins/osf-agnostic-auth-route';
+
+export default class Application extends Route.extend(OSFAgnosticAuthRouteMixin, {
     // anything which *must* be merged to prototype here
     i18n: service(),
 
