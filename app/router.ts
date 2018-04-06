@@ -12,11 +12,8 @@ Router.map(function() {
     // if (window.isProviderDomain) {
     //     this.route('submit');
     // } else {
-    this.route('collections', function() {
-        this.route('page-not-found', { path: '/' });
-        this.route('provider', { path: ':provider_id' }, function() {
-            this.route('submit');
-        });
+    this.route('provider', { path: ':provider_id' }, function() {
+        this.route('submit');
     });
     // }
 });
