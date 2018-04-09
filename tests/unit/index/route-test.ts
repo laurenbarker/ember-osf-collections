@@ -1,15 +1,17 @@
 import { expect } from 'chai';
-import { describe, it } from 'mocha';
 import { setupTest } from 'ember-mocha';
+import { describe, it } from 'mocha';
 
-describe('Unit | Route | index', function() {
+import Route from '@ember/routing/route';
+
+describe('Unit | Route | index', () => {
   setupTest('route:index', {
     // Specify the other units that are required for this test.
     // needs: ['controller:foo']
   });
 
   it('exists', function() {
-    let route = this.subject();
+    const route = this.subject();
     expect(route).to.be.ok;
   });
 });

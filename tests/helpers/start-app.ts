@@ -1,7 +1,7 @@
 import { merge } from '@ember/polyfills';
 import { run } from '@ember/runloop';
 
-import Application from '../../app';
+import Application from 'ember-osf-collections/app';
 import config from '../../config/environment';
 
 export default function startApp(attrs) {

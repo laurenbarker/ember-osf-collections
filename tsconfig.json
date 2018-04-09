@@ -17,15 +17,11 @@
       ],
       "ember-osf-collections/*": [
         "app/*"
-      ],
-      "*": [
-        "types/*"
       ]
     }
   },
   "include": [
     "app",
     "tests",
-    "types"
   ]
 }

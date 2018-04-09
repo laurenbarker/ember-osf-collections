@@ -8,15 +8,17 @@ const TITLES = {
     notFound: 'components.errorPage.title.notFound',
 };
 
-export default Component.extend({
-    classNames: ['CollectionsErrorPage', 'FlexContent'],
-    supportEmail: 'support@osf.io',
+export default class ErrorPage extends Component.extend({
 
-    errorMessage: computed('error', function() {
+}) {
+    classNames = ['CollectionsErrorPage', 'FlexContent'];
+    supportEmail = 'support@osf.io';
+
+    errorMessage = computed('error', function(): string {
         return MESSAGES[this.get('error')];
-    }),
+    });
 
-    title: computed('error', function() {
+    title = computed('error', function(): string {
         return TITLES[this.get('error')];
-    }),
-});
+    });
+}

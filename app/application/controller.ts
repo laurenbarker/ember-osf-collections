@@ -1,17 +1,11 @@
 import Controller from '@ember/controller';
-import { inject as service } from '@ember/service';
 
 import OSFAgnosticAuthControllerMixin from 'ember-osf/mixins/osf-agnostic-auth-controller';
 
-/**
- * @module ember-osf-collections
- * @submodule controllers
- */
+export default class Application extends Controller.extend(OSFAgnosticAuthControllerMixin) { }
 
-/**
- * @class Application Controller
- * @extends Ember-OSF.OSFAgnosticAuthControllerMixin
- */
-export default Controller.extend(OSFAgnosticAuthControllerMixin, {
-
-});
+declare module '@ember/controller' {
+    interface ControllerRegistry {
+        application: Application;
+    }
+}
