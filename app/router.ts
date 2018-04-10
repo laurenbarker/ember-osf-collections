@@ -9,13 +9,17 @@ const Router = EmberRouter.extend({
 Router.map(function() {
     this.route('page-not-found', { path: '/*bad_url' });
 
+    // for branding
     // if (window.isProviderDomain) {
     //     this.route('submit');
     // } else {
+    // }
+
     this.route('provider', { path: ':provider_id' }, function() {
+        this.route('discover');
         this.route('submit');
     });
-    // }
+
 });
 
 export default Router;
