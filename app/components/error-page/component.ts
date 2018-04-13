@@ -8,10 +8,8 @@ const TITLES = {
     notFound: 'components.errorPage.title.notFound',
 };
 
-export default class ErrorPage extends Component.extend({
-
-}) {
-    classNames = ['CollectionsErrorPage', 'FlexContent'];
+export default class ErrorPage extends Component {
+    classNames = ['FlexContent'];
     supportEmail = 'support@osf.io';
 
     errorMessage = computed('error', function(): string {
