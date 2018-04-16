@@ -17,11 +17,11 @@ export default class ErrorPage extends Component {
 
     @computed('error')
     get errorMessage(this: ErrorPage): string {
-        return MESSAGES[this.get('error')];
+        return MESSAGES[this.error];
     }
 
     @computed('error')
     get title(this: ErrorPage): string {
-        return TITLES[this.get('error')];
+        return TITLES[this.error];
     }
 }
