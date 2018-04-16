@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
-    "allowJs": true,
+    "allowJs": false,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "noImplicitThis": true,
@@ -9,6 +9,7 @@
     "noEmit": true,
     "inlineSourceMap": true,
     "inlineSources": true,
+    "strictNullChecks": true,
     "baseUrl": ".",
     "module": "es6",
     "paths": {
@@ -21,7 +22,8 @@
       "*": [
         "types/*"
       ]
-    }
+    },
+    "experimentalDecorators": true
   },
   "include": [
     "app",

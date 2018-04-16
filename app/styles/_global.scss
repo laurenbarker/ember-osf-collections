@@ -1,0 +1,5 @@
+// so page content isn't under the navbar
+/* stylelint-disable-next-line selector-class-pattern*/
+.osf-nav-wrapper {
+    height: 50px;
+}
