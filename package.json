@@ -25,7 +25,7 @@
     "*.scss": "stylelint"
   },
   "devDependencies": {
-    "@centerforopenscience/ember-osf": "https://github.com/laurenbarker/ember-osf#7ee69d5db5677d74996f0397fe680ba60f1a376b",
+    "@centerforopenscience/ember-osf": "https://github.com/CenterForOpenScience/ember-osf#c3752b61106769d11ceee914c3f5ec34b24e6c09",
     "@centerforopenscience/eslint-config": "^2.0.0",
     "@centerforopenscience/osf-style": "1.5.1",
     "@ember-decorators/babel-transforms": "^2.0.1",
@@ -42,6 +42,7 @@
     "ember-cli": "3.1.2",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.6.0",
+    "ember-cli-bootstrap-sassy": "^0.5.8",
     "ember-cli-chai": "^0.4.0",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.2",
@@ -55,7 +56,6 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-stylelint": "^2.0.0",
     "ember-cli-template-lint": "^0.7.5",
-    "ember-cli-tslint": "^0.1.3",
     "ember-cli-typescript": "^1.2.1",
     "ember-cli-uglify": "^2.0.0",
     "ember-component-css": "^0.6.3",

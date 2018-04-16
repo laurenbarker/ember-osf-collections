@@ -1,5 +1,6 @@
----
 language: node_js
+node_js:
+  - "8"
 
 sudo: false
 dist: trusty
@@ -25,7 +26,4 @@ install:
   - yarn --prefer-offline --frozen-lockfile --ignore-engines
 
 script:
-  - yarn test:cover
-
-after_success:
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - yarn test

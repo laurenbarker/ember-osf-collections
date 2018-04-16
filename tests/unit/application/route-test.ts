@@ -5,7 +5,10 @@ import { describe, it } from 'mocha';
 describe('Unit | Route | application', () => {
   setupTest('route:application', {
     // Specify the other units that are required for this test.
-    // needs: ['controller:foo']
+    needs: [
+        'service:i18n',
+        'service:session',
+    ],
   });
 
   it('exists', function() {
