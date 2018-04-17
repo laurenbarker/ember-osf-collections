@@ -16,6 +16,9 @@ module.exports = function(defaults) {
                 'node_modules/@centerforopenscience/osf-style/sass',
             ],
         },
+        babel: {
+            sourceMaps: 'inline',
+        },
         'ember-cli-babel': {
             includePolyfill: true,
         },
