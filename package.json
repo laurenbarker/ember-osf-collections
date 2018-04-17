@@ -29,7 +29,7 @@
     "@centerforopenscience/eslint-config": "^2.0.0",
     "@centerforopenscience/osf-style": "1.5.1",
     "@ember-decorators/babel-transforms": "^2.0.1",
-    "@types/ember": "^2.8.18",
+    "@types/ember": "^2.8.20",
     "@types/ember-data": "^2.14.14",
     "@types/ember-testing-helpers": "^0.0.3",
     "@types/mocha": "^5.0.0",
