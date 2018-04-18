@@ -12,9 +12,10 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "lint:js": "eslint ./*.js app config lib server tests",
+    "lint": "eslint --ext js,ts --max-warnings=0 . && tslint -p . && stylelint 'app/**/*.scss'",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "test:cover": "COVERAGE=true ember test"
   },
   "lint-staged": {
     "*.js": "eslint",
@@ -29,7 +30,7 @@
     "@centerforopenscience/eslint-config": "^2.0.0",
     "@centerforopenscience/osf-style": "1.5.1",
     "@ember-decorators/babel-transforms": "^2.0.1",
-    "@types/ember": "^2.8.18",
+    "@types/ember": "^2.8.20",
     "@types/ember-data": "^2.14.14",
     "@types/ember-testing-helpers": "^0.0.3",
     "@types/mocha": "^5.0.0",
@@ -44,11 +45,13 @@
     "ember-cli-babel": "^6.6.0",
     "ember-cli-bootstrap-sassy": "^0.5.8",
     "ember-cli-chai": "^0.4.0",
+    "ember-cli-code-coverage": "https://github.com/kategengler/ember-cli-code-coverage#77b5b9201060d634d281f64a5bb7b412773a8b89",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.2",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-inline-content": "^0.4.1",
     "ember-cli-mocha": "^0.15.0",
     "ember-cli-moment-shim": "^3.5.0",
     "ember-cli-sass": "^7.2.0",
@@ -68,10 +71,14 @@
     "ember-moment": "^7.6.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~3.1.0",
-    "eslint-plugin-ember": "^5.0.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-typescript": "^0.11.0",
     "lint-staged": "^7.0.0",
     "loader.js": "^4.2.3",
+    "stylelint": "^9.2.0",
     "stylelint-config-sass-guidelines": "^5.0.0",
+    "stylelint-scss": "^3.0.0",
+    "tslint": "^5.9.1",
     "tslint-consistent-codestyle": "^1.11.1",
     "tslint-eslint-rules": "^5.0.0",
     "typescript": "^2.8.1",
@@ -79,8 +86,5 @@
   },
   "engines": {
     "node": ">= 8"
-  },
-  "dependencies": {
-    "stylelint-scss": "^3.0.0"
   }
 }

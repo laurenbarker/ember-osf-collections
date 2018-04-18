@@ -6,6 +6,9 @@ module.exports = {
         sourceType: 'module',
     },
     extends: '@centerforopenscience/eslint-config/ember',
+    plugins: [
+        'typescript',
+    ],
     env: {
         browser: true,
         es6: true,
@@ -16,15 +19,23 @@ module.exports = {
                 'resetController'
             ],
         }],
-        'no-undef': 0,
+        'no-undef': 'off',
         'no-unused-vars': ['error', { argsIgnorePattern: '^this' }],
-        strict: 0,
+        'typescript/no-unused-vars': 'error',
+        strict: 'off',
     },
     overrides: [
         {
             files: ['**/*.d.ts'],
             rules: {
-                'no-unused-vars': 0,
+                'no-unused-vars': 'off',
+                'indent': 'off',
+            }
+        },
+        {
+            files: ['*-test.ts'],
+            rules: {
+                'no-unused-expressions': 'off',
             }
         }
     ]
