@@ -1,5 +1,17 @@
 'use strict';
 
+let localConfig;
+
+try {
+    localConfig = require('./local'); // eslint-disable-line global-require
+} catch (ex) {
+    localConfig = {};
+}
+
+const {
+    GIT_COMMIT: release,
+} = { ...process.env, ...localConfig };
+
 module.exports = function(environment) {
     const authorizationType = 'cookie';
 
@@ -9,6 +21,14 @@ module.exports = function(environment) {
         rootURL: '/collections/',
         locationType: 'auto',
         authorizationType,
+        sentryDSN: null,
+        sentryOptions: {
+            release,
+            ignoreErrors: [
+                // https://github.com/emberjs/ember.js/issues/12505
+                'TransitionAborted',
+            ],
+        },
         EmberENV: {
             FEATURES: {
                 // Here you can enable experimental features on an ember canary build
