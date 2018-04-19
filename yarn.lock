@@ -3135,6 +3135,14 @@ ember-basic-dropdown@^0.34.0:
     ember-native-dom-helpers "^0.5.4"
     ember-wormhole "^0.5.2"
 
+ember-basic-dropdown@^1.0.0-beta.3:
+  version "1.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/ember-basic-dropdown/-/ember-basic-dropdown-1.0.0-beta.6.tgz#733ebda97096ff39e3ae636dfb6a250b0cc8dadd"
+  dependencies:
+    ember-cli-babel "^6.12.0"
+    ember-cli-htmlbars "^2.0.3"
+    ember-maybe-in-element "^0.1.3"
+
 ember-bootstrap-datepicker@^2.0.3:
   version "2.0.8"
   resolved "https://registry.yarnpkg.com/ember-bootstrap-datepicker/-/ember-bootstrap-datepicker-2.0.8.tgz#db9f009c9a5ee972adb89f8037eb5b5557a6ae20"
@@ -3177,7 +3185,7 @@ ember-cli-app-version@^3.0.0:
     ember-cli-babel "^6.8.0"
     git-repo-version "^1.0.0"
 
-ember-cli-babel@6.12.0, ember-cli-babel@^6.11.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.9.2:
+ember-cli-babel@6.12.0, ember-cli-babel@^6.11.0, ember-cli-babel@^6.12.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.9.2:
   version "6.12.0"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.12.0.tgz#3adcdbe1278da1fcd0b9038f1360cb4ac5d4414c"
   dependencies:
@@ -3846,7 +3854,7 @@ ember-component-css@^0.6.0, ember-component-css@^0.6.3:
     rsvp "^4.8.1"
     walk-sync "^0.3.2"
 
-ember-concurrency@^0.8.12, ember-concurrency@^0.8.7:
+ember-concurrency@^0.8.12, ember-concurrency@^0.8.17, ember-concurrency@^0.8.7:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/ember-concurrency/-/ember-concurrency-0.8.17.tgz#be47a90342f1960f4f57284c2fe5f7ce2396142a"
   dependencies:
@@ -4123,6 +4131,17 @@ ember-power-select@^1.10.4:
   dependencies:
     ember-basic-dropdown "^0.34.0"
     ember-cli-babel "^6.10.0"
+    ember-cli-htmlbars "^2.0.1"
+    ember-concurrency "^0.8.12"
+    ember-text-measurer "^0.4.0"
+    ember-truth-helpers "^2.0.0"
+
+ember-power-select@^2.0.0-beta.3:
+  version "2.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/ember-power-select/-/ember-power-select-2.0.0-beta.3.tgz#af24c064b72c6550a73d534ede9545fb35d86961"
+  dependencies:
+    ember-basic-dropdown "^1.0.0-beta.3"
+    ember-cli-babel "^6.11.0"
     ember-cli-htmlbars "^2.0.1"
     ember-concurrency "^0.8.12"
     ember-text-measurer "^0.4.0"

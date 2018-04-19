@@ -1,1 +1,44 @@
-{{t 'Submit route'}}
+<div class="SubmitHeader text-center">
+    <h1>Add to Collection</h1>
+</div>
+<div class="SubmitBody">
+    <div class="container">
+        <div class="SectionBlock">
+            <div class="SectionHeader">Project</div>
+            <div class="m-t-sm">
+                {{#power-select
+                    placeholder='Click to select'
+                    onchange=(action 'nodeSelected') as |node|}}
+                {{/power-select}}
+            </div>
+        </div>
+        <div class="SectionBlock">
+            <div class="SectionHeader">Project metadata</div>
+        </div>
+        <div class="SectionBlock">
+            <div class="SectionHeader">Project contributors</div>
+        </div>
+        <div class="SectionBlock">
+            <div class="SectionHeader">Collection subjects</div>
+            {{subject-picker
+                initialSubjects=model.subjects
+                currentSubjects=subjectsList
+                provider=osfProvider
+            }}
+        </div>
+        <div class="SectionBlock">
+            <div class="SectionHeader">Collection metadata</div>
+        </div>
+    </div>
+</div>
+
+{{!-- <div class="m-t-sm">
+    {{#power-select
+        search=(perform _getInitialUserNodes)
+        placeholder='Click to select'
+        selected=selectedNode
+        onchange=(action 'nodeSelected') as |node|}}
+        {{get-ancestor-descriptor node}} <strong>{{node.title}}</strong>
+    {{/power-select}}
+</div>
+ --}}

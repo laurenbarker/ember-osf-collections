@@ -1,0 +1,33 @@
+& {
+    flex-direction: column;
+    color: #333;
+}
+
+.SubmitHeader {
+    color: #fff;
+    padding: 90px 15px 0;
+    background: #1da1f2;
+    background-size: cover;
+    border-bottom: 1px solid #eee;
+    height: 200px;
+    min-width: 100%;
+}
+
+.SubmitBody {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+    flex-grow: 1;
+
+    .SubmitSection {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+}
+
+.SectionBlock {
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px 20px 20px;
+    box-shadow: 0 0 3px #ddd;
+}
