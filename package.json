@@ -28,7 +28,7 @@
   "devDependencies": {
     "@centerforopenscience/ember-osf": "https://github.com/CenterForOpenScience/ember-osf#c3752b61106769d11ceee914c3f5ec34b24e6c09",
     "@centerforopenscience/eslint-config": "^2.0.0",
-    "@centerforopenscience/osf-style": "1.5.1",
+    "@centerforopenscience/osf-style": "https://github.com/CenterForOpenScience/osf-style#b09451d759c8544d2fab4bd7dbd5ca8b6dc242b8",
     "@ember-decorators/babel-transforms": "^2.0.1",
     "@types/ember": "^2.8.20",
     "@types/ember-data": "^2.14.14",
