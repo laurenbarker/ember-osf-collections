@@ -9,26 +9,14 @@ import { task } from 'ember-concurrency';
 import $ from 'jquery';
 
 @classNames('FlexContent')
-export default class Submit extends Controller.extend({
-    init() {
-        this._super(...arguments);
-        this.get('loadOSFProvider').perform();
-    },
-
-    loadOSFProvider: task(function*(this: Submit) {
-        const provider = yield this.store.findRecord('preprint-provider', 'osf');
-        this.set('osfProvider', provider);
-    }),
-}) {
+export default class Submit extends Controller {
     @service store;
+    @service theme;
+
+    selectedSubjects: MutableArray<any> = A([]);
 
     @action
     nodeSelected(this: Submit) {
         return '';
-    }
-
-    @computed('model.subjects.@each')
-    get subjectsList(this: Submit): [] {
-        return this.get('model.subjects') ? $.extend(true, [], this.get('model.subjects')) : A();
     }
 }

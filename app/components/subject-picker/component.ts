@@ -39,15 +39,13 @@ export default class SubjectPicker extends Component.extend({
         this._super(...arguments);
 
         this.setProperties({
-            initialSubjects: [],
-            currentSubjects: [],
             hasChanged: false,
             columns: A(new Array(3).fill(null).map(() => Column.create())),
         });
     },
 
     didReceiveAttrs() {
-        // this.querySubjects();
+        this.querySubjects();
     },
 }) {
     @service store;

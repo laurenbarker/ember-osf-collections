@@ -4,7 +4,7 @@
 }
 
 .SubmitHeader {
-    color: #fff;
+    color: $color-white;
     padding: 90px 15px 0;
     background: #1da1f2;
     background-size: cover;
@@ -27,7 +27,15 @@
 
 .SectionBlock {
     margin-top: 20px;
-    background: #fff;
+    background: $color-white;
     padding: 10px 20px 20px;
     box-shadow: 0 0 3px #ddd;
+}
+
+.SectionHeader {
+    margin: 1rem 0;
+    font: {
+        size: 16px;
+        font-weight: bold;
+    }
 }

@@ -21,9 +21,8 @@
         <div class="SectionBlock">
             <div class="SectionHeader">Collection subjects</div>
             {{subject-picker
-                initialSubjects=model.subjects
-                currentSubjects=subjectsList
-                provider=osfProvider
+                selectedSubjects=selectedSubjects
+                provider=theme.provider
             }}
         </div>
         <div class="SectionBlock">
